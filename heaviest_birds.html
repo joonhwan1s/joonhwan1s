@@ -7,33 +7,77 @@
         <title>Document</title>
     </head>
     <body>
+        <!-- tr -> DB테이블 -->
         <h1>Heaviest Birds</h1>
         <table>
-            <tr>
-                <th>Animal</th>
-                <th>Average mss [kg (lb)]</th>
-                <th>Maximun mass [kg (lb)]</th>
-                <th>Flighted</th>
-            </tr>
-            <tr>
-                <td>Ostrucg</td>
-                <td>203(104)</td>
-                <td>156.8 (346)</td>
-                <td>No</td>
-            </tr>
-            <tr>
-                <td>Somali Ostrich</td>
-                <td>90 (200)</td>
-                <td>130 (240)</td>
-                <td>No</td>
-            </tr>
-            <tr>
-                <td>Wild Turkey</td>
-                <td>13.5 (29.5)</td>
-                <td>39 (85)</td>
-                <td>Yes</td>
-            </tr>
+            <!-- table heaer를 밝히기 위함 -->
+            <thead>
+                <tr>
+                    <th>Animal</th>
+                    <th>Average mss [kg (lb)]</th>
+                    <th>Maximun mass [kg (lb)]</th>
+                    <th>Flighted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ostrucg</td>
+                    <td>203(104)</td>
+                    <td>156.8 (346)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Somali Ostrich</td>
+                    <td>90 (200)</td>
+                    <td>130 (240)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5 (29.5)</td>
+                    <td>39 (85)</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
         </table>
 
+        <h2>VS</h2>
+        <table>
+            <!-- table heaer를 밝히기 위함 -->
+            <trad>
+                <tr>
+                    <th rowspan="2">Animal</th>
+                    <th colspan="2">Averge Mass</th>
+                    <th rowspan="2">Flighted</th>
+                </tr>
+                <tr>
+                    <th>lb</th>
+                    <th>LB</th>
+
+                </tr>
+            </trad>
+            <tbody>
+                <tr>
+                    <td>Ostrucg</td>
+                    <td>104</td>
+                    <td>203</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Somali Ostrich</td>
+                    <td>90
+                    </td>
+                    <td>200</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5
+                    </td>
+                    <td>29.5</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
