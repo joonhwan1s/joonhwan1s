@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-size: normal;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    font-size: 40px;
+    /* font-family: 'Segoe UI', Helvetica, Arial, ; */
+    font-family: fantasy;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+ line-height: 2;
+}
+h2{
+    
+}
+button{
+
+
+}
