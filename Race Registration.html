@@ -7,33 +7,45 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Race Registration!</title>
                 </head>
-                <h1>Race Registration!</h1>
-
-            <form>
-                <p>
-                    <label for="First Name">First Name</label>
-                    <input id="First Name" type="text" name="First Name" required="required">
-
+    <body>
+        <h1>Race Registration!</h1>        
+                <!-- action -> 데이터를 어디로 제출할지 결정 -->
+            <form action=""> 
+                    <div>
+                        <label for="First Name">First Name</label>
+                        <input id="First Name" type="text" name="First Name" required>
                         <label for="Last Name">Last Name</label>
-                        <input id="Last Name" type="text" name="Last Name" required="required"></p>
-                        <div>Select a Race:</div>
-                    </p>
-                </form>
-
-                <form>
-                     <p>
-                        <input type="radio" name="Fun Run 5K" id="Fun Run 5K" value="Fun Run 5K">
+                        <input id="Last Name" type="text" name="Last Name" required>
+                    </div>
+                    <p>Select a Race:</p>
+                    <div>
+                            <input type="radio" name="select" id="Fun Run 5K" value="Fun">
                             <label for="Fun Run 5K">Fun Run 5K</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="Half Maratbon" id="Half Maratbon" value="Half Maratbon">
+                    </div>        
+                    <div>        
+                            <input type="radio" name="select" id="Half Maratbon" value="Half">
                             <label for="Half Maratbon">Half Maratbon</label>
-                    </p>
-                    <p>
-                            <input type="radio"name="Full Maratbon"id="Full Maratbon"value="Full Maratbon">
+                    </div>
+                    <div>       
+                            <input type="radio" name="select" id="Full Maratbon" value="Full">
                             <label for="Full Maratbon">Full Maratbon</label>
-                    </p>
-                        </form>
-
-                        </body>
-                    </html>
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input id="Email" type="email" name="Email" required>
+                        <label for="password">Email</label>
+                        <input id="password" type="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="">Select Age Group</label>
+                        <select name="Age" id="Age">
+                            <option value="kids">under 18</option>
+                            <option value="ya">18-30</option>
+                            <option value="adults">30-50</option>
+                            <option value="sense">50+</option>
+                        </select>
+                    </div>
+                <button>Register!</button>
+            </form>
+    </body>
+</html>
