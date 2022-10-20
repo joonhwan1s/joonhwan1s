@@ -98,5 +98,9 @@ p::selection{
 
 button:hover{
     background-color: olive;
-    font-size: 10px;
+    font-size: 30px;
+}
+
+button {
+    background-color: magenta ;
 }
