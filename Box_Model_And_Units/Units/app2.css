@@ -1,0 +1,25 @@
+div {
+    width: 200px;
+    height: 250px;
+    background-color: burlywood;
+}
+
+h1{
+    background-color: aquamarine;
+    width: 200;
+}
+
+#one{
+    background-color: antiquewhite;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+#two{
+    background-color: azure;
+}
+
+#three{
+    background-color: bisque;
+}
