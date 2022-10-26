@@ -1,11 +1,64 @@
-section{
-    width: 500px;
-    height: 500px;
-    background-color: magenta;
+body{
+    font-family: Roboto, sans-serif;
 }
 
-#rgba{
-    width: 50%;
-    height: 50%;
-    background-color: white;
+main{
+    width: 60%;
+    margin: 0 auto;
 }
+
+h1{
+    font-weight: 100;
+}
+
+h1+h2{
+    margin-top: 10px;
+}
+
+h1,h2,h3{
+    font-family: Roboto, sans-serif;
+}
+
+/* --------------배경화면------- */
+/* section{
+    width: 80%;
+    height: 800px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664640458245-79940603ce45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+} */
+
+
+/* ----------호버효과-------- */
+/* body{
+    font-family: 'Robote', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;
+}
+
+
+button {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s,border-color 0.25s,color 0.25s,transform 0.25s;
+}
+
+button:hover{
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+} */
