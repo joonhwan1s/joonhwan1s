@@ -7,8 +7,43 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+   
 }
 
+#container div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    max-width: 200px;
+    font-size: 4em;
+    flex-basis: 400px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: purple;
+    flex:1 300px;
+}
+
+main .maincontent{
+    background-color:aquamarine;
+    flex:2 600px;
+}
+/* div:nth-of-type(3){
+    align-self: flex-start;
+} */
