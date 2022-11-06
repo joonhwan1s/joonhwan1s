@@ -1,10 +1,98 @@
-const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
+//맨 처음 무엇을 입력할건지 먼저 뜨고 그 다음 new list delete quit 기능들을 넣는다.
 
-// WRITE YOUR LOOP BELOW THIS LINE:
+// let chicken = {};
+// let i = 0;
 
-for(let num of numbers){
-    console.log(num*num)
+// let First = prompt('enter new work');
+// while(1){
+//     if(First == 'new'){
+
+//         NewFirst = prompt('Add A Todo');
+
+//         chicken.push(NewFirst);
+//         console.log(chicken);
+//     }
+//     if(NewFirst == 'quit'){
+//         break;
+//     }
+// }
+let i = 0;
+
+let far = {};
+
+while(true){
+    let fire = prompt("hi");    
+    let flag = 0;
+    if(fire == 'quit'){
+        break;
+    }
+    else if(fire == 'new'){
+        console.log('go new logic')   
+        while(true){
+            let fire2 = prompt("Enter you logic");
+            far[i] = fire2;
+            console.log(far[i]);
+            i++;
+            if(fire2 == 'list'){
+                flag = 1;
+            }else if(fire2 == 'delete'){
+                flag = 2;
+            }
+            if(flag == 1 || flag == 2){
+                break;
+            }
+        }
+        if(flag == 1){
+            for(let num=0;num<far.length;num++){
+                console.log(far[num])
+            }
+        }
+        // }else if(flag == 2){
+        //     far.splice()
+        // }
+    }
+    // }else if(fire == 'list'){
+    //     for(let num=0; num<far.length; num++){
+    //     console.log(far[num])
+    //     }
+    // }else if(fire == 'delete'){        
+    //     far.splice()
+    // }
 }
+
+
+
+
+// if(First == list){
+//     while(First==quit) {
+//         let First3 = prompt('ENTER YOUR LIST');
+//         let flag = 1;
+//         let First2 = First3;
+//             chicken[i] = First2;
+//             console.log(chicken[i])
+//         if(chicken[i] == 'quit'){
+//             flag = 0;
+//         }
+//         if(flag = 0){
+//             break;
+//     }
+//         i++;
+        
+//     }
+// }
+
+
+
+
+
+
+// const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
+
+// // WRITE YOUR LOOP BELOW THIS LINE:
+
+// for(let num of numbers){
+//     console.log(num*num)
+// }
 
 
 
