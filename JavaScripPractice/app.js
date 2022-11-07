@@ -21,36 +21,52 @@ let i = 0;
 let far = {};
 
 while(true){
-    let fire = prompt("hi");    
+    let FirstEnter = prompt("ENTER ANYTHING");    
     let flag = 0;
-    if(fire == 'quit'){
+    console.log(FirstEnter);
+    if(FirstEnter == 'quit'){
         break;
     }
-    else if(fire == 'new'){
+    else if(FirstEnter == 'new'){
         console.log('go new logic')   
         while(true){
-            let fire2 = prompt("Enter you logic");
-            far[i] = fire2;
+            let SecondEnter = prompt("Enter you logic");
+            far[i] = SecondEnter;
             console.log(far[i]);
             i++;
-            if(fire2 == 'list'){
+            if(SecondEnter == 'list'){
                 flag = 1;
-            }else if(fire2 == 'delete'){
+                far.splice(0,-1);//신경써야함
+                console.log("***********list***********")
+                for(let num=0; num<Object.keys(far).length;num++){
+                    console.log(num + " : " + far[num]);
+                }
+                console.log("***********list***********")
+            }else if(SecondEnter == 'delete'){
+                console.log("***********delete***********")
+                for(let num=0; num<Object.keys(far).length-1;num++){
+                    console.log(num + " : " + far[num]);
+                }
+                console.log("***********delete***********")
+                let DeleteEnter = prompt("Enter Delete Number");
+                if(isNaN(DeleteEnter) != false){
+                    continue;
+                }else{
+                far.splice(DeleteEnter);
                 flag = 2;
-            }
-            if(flag == 1 || flag == 2){
+                }
+            }else if(SecondEnter == 'quit'){
                 break;
             }
-        }
-        if(flag == 1){
-            for(let num=0;num<far.length;num++){
-                console.log(far[num])
+            if(flag == 1){
+                break;
+            }else if(flag == 2){
+                continue;
             }
         }
-        // }else if(flag == 2){
-        //     far.splice()
-        // }
-    }
+    }//splice -> 사용해서 list또는 delete가 입력되는 값을 제거해야함... 
+}
+
     // }else if(fire == 'list'){
     //     for(let num=0; num<far.length; num++){
     //     console.log(far[num])
@@ -58,9 +74,6 @@ while(true){
     // }else if(fire == 'delete'){        
     //     far.splice()
     // }
-}
-
-
 
 
 // if(First == list){
