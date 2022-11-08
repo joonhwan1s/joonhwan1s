@@ -1,6 +1,26 @@
-function lastElement(){
+function capitalize(){
     
 }
+
+
+
+// function lastElement(params){   
+    
+//     if(params.length === 0){
+//         return null;
+//     }else{
+//         return params[params.length-1];
+//     }
+
+// }
+// let asd = {}
+// console.log(asd);
+
+// lastElement([3,5,7]); //7
+
+// lastElement([1]) //1
+// lastElement([]) //null
+
 
 // function add(x, y){
 //     if(typeof x !== 'number' || typeof y !== 'number'){
