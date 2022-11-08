@@ -1,50 +1,42 @@
 //맨 처음 무엇을 입력할건지 먼저 뜨고 그 다음 new list delete quit 기능들을 넣는다.
-
-// let chicken = {};
-// let i = 0;
-
-// let First = prompt('enter new work');
-// while(1){
-//     if(First == 'new'){
-
-//         NewFirst = prompt('Add A Todo');
-
-//         chicken.push(NewFirst);
-//         console.log(chicken);
-//     }
-//     if(NewFirst == 'quit'){
-//         break;
-//     }
-// }
 let i = 0;
 
-let far = {};
+let far = [];
 
-while(true){
+while(FirstEnter != 'quit' && FirstEnter !== 'q'){
     let FirstEnter = prompt("ENTER ANYTHING");    
     let flag = 0;
     console.log(FirstEnter);
     if(FirstEnter == 'quit'){
+        console.log("OK, YOU QUIT THE APP");
         break;
     }
     else if(FirstEnter == 'new'){
-        console.log('go new logic')   
+        console.log('go new logic');   
         while(true){
             let SecondEnter = prompt("Enter you logic");
             far[i] = SecondEnter;
             console.log(far[i]);
             i++;
+            far = far.filter((element, i) => element != null);
+            // far.forEach((element, index) => {
+            // console.log(index + ":" + element)})
             if(SecondEnter == 'list'){
+                far.splice(far.length-1);
+
                 flag = 1;
-                far.splice(0,-1);//신경써야함
+                // far.splice(0,-1);//신경써야함
                 console.log("***********list***********")
-                for(let num=0; num<Object.keys(far).length;num++){
+                for(let num=0; num<far.length;num++){
                     console.log(num + " : " + far[num]);
                 }
                 console.log("***********list***********")
+                
             }else if(SecondEnter == 'delete'){
+                far.splice(far.length-1);
+                // far = far.filter((element, i) => element != null);
                 console.log("***********delete***********")
-                for(let num=0; num<Object.keys(far).length-1;num++){
+                for(let num=0; num<far.length;num++){
                     console.log(num + " : " + far[num]);
                 }
                 console.log("***********delete***********")
@@ -52,10 +44,19 @@ while(true){
                 if(isNaN(DeleteEnter) != false){
                     continue;
                 }else{
-                far.splice(DeleteEnter);
+                parseInt(DeleteEnter);
+                far.splice(DeleteEnter,1);
+                far = far.filter((element, i) => element != null);
+                console.log("***********RESULT***********")
+                for(let num=0; num<far.length;num++){
+                    console.log(num + " : " + far[num]);
+                }
+                console.log("***********RESULT***********")
                 flag = 2;
                 }
             }else if(SecondEnter == 'quit'){
+                far.splice(far.length-1);
+                console.log("ENTER NEW OR QUIT");
                 break;
             }
             if(flag == 1){
@@ -67,7 +68,7 @@ while(true){
     }//splice -> 사용해서 list또는 delete가 입력되는 값을 제거해야함... 
 }
 
-    // }else if(fire == 'list'){
+    // }else if(fire == 'list'){ Object.keys(far).length-1
     //     for(let num=0; num<far.length; num++){
     //     console.log(far[num])
     //     }
