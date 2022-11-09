@@ -1,6 +1,120 @@
-function capitalize(){
+
+
+// const newMovie = movies.map(movie => (
+//     `${movie.title}`
+// ))
+
+
+// const greet = great => {
+//     // great = 'Hey ' + great + '!';
+//     return `Hey ${great}!`;
+// }
+
+
+// const square = num => {
+//     return num*num;
+// }
+
+
+//  const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+//  // Write your code here
+ 
+//  const firstNames = fullNames.map(function(firstNmae){
     
-}
+//     return firstNmae.first;
+//  })
+
+
+
+
+
+// const hen = {
+//     name: 'Helen',
+//     eggCount: 0,
+//     layAnEgg: function(EGG){
+//         EGG = 'EGG';
+//             this.eggCount++;
+//         console.log(this.eggCount);
+//         console.log(EGG);
+//         return EGG
+//     }
+//      meow() {
+//          console.log(`${this.color} say Mewer`);
+//      }
+// }
+
+// hen.name // "Helen"
+// hen.eggCount // 0
+// hen.layAnEgg() // "EGG"
+// hen.layAnEgg() // "EGG"
+// hen.eggCount // 2
+
+
+// const square = {
+//     area: function(num){
+//         return num*num;
+//     },
+//     perimeter: function(num){
+//         return num*4;
+//     }
+// }
+
+// square.area(10) //100
+// square.perimeter(10) //40
+
+// const add = function (x,y){
+//     return x+y;
+// }
+
+
+
+
+// function returnDay(params){
+//     switch(params){
+//       case 0 : 
+//         params = null;
+//         break;
+//       case 1 :
+//         params = "Monday"      
+//         break;
+//       case 2 :
+//         params = "Tuesday"      
+//         break;
+//       case 3 :
+//         params = "Wednesday"      
+//         break;
+//       case 4 :
+//         params = "Thursday"      
+//         break;
+//       case 5 :
+//         params = "Friday"      
+//         break;
+//       case 6 :
+//         params = "Saturday"      
+//         break;
+//       case 7 :
+//         params = "Sunday"
+//         break;
+//         default:
+//             return null;      
+//     }
+
+//     return params;
+// }
+
+
+// function capitalize(params){//스트링의 첫번째 글자는 대문자로 처리하고 나머지는 소문자
+//     let trans1 = (params.substring(0,1)).toUpperCase()
+//     let trans2 =  params.substring(1,params.length)
+//     let trans3 = trans1 + trans2
+//     // console.log((params.substring(0,1)).toUpperCase() + params.substring(1,params.length));
+//     // params.substring(1,params.length);
+//     console.log(trans1 + trans2)
+
+//     return trans3
+
+// }
 
 
 
