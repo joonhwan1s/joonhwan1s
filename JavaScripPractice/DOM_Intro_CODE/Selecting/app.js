@@ -16,3 +16,6 @@ const links = document.querySelectorAll('p a');
 for (let link of links) {
     console.log(link.href)
 }
+
+const doneTodos = document.querySelectorAll('done');
+const checkbox = document.querySelector("#scales").value = "checkbox";
