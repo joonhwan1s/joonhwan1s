@@ -1,3 +1,43 @@
+const prices = [9,1,19,49,30];
+
+prices.reduce((total, price) => totla+price)
+
+
+
+
+// function allEvens(Enter){
+//     let result = Enter.every(Enter => Enter%2 == 0)
+//         console.log(result);
+//         return result;
+// } 
+
+// exams.every(score => score >= 74) // 모두 참인지 구별 some은 특정개수가 참이 있는지 구별
+
+// function validUserNames(usernames){
+//     let result = usernames.filter(usernames => usernames.length <10)
+//         return result;
+// }
+
+// function validUserNames(usernames){
+//     return usernames.filter(function(usernames){
+//          if(usernames.length <10){
+//             return usernames;
+//          };
+//      })
+//  }
+//배열이 들어가는 부분
+// function validUserNames(usernames){
+//    let filternames = usernames.filter(function(usernames){
+//         return usernames.length <10;
+//     })
+//     return console.log(filternames);
+// }
+
+// console.log(validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']))
+
+
+// const goodmovie = movies.filter(m => m.score > 80).map(m => m.title);
+
 
 
 // const newMovie = movies.map(movie => (
