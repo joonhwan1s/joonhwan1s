@@ -222,4 +222,31 @@
 //     input = prompt("what would you li")
 // }
 
+// document.querySelector('#container').style.textAlign = "center"
 
+// document.querySelector('img').style.width = "150px";
+// document.querySelector('img').style.borderRadius = "50%"
+
+
+// const colink = document.querySelector('img')
+
+// for(let link of colink){
+//     colink.style.background = #BDBDBD
+//     colink.width
+    
+// }
+
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+// const alline = document.querySelectorAll("span")
+
+
+// for(let i = 0; i<alline.length; i++){
+//     document.querySelectorAll("span")[i].style.color = `${colors[i]}`
+// }
+
+const li1 = document.querySelectorAll('li')
+
+for(let line of li1){
+    line.classList.toggle('highlight');
+}
