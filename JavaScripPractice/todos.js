@@ -1,6 +1,6 @@
-const prices = [9,1,19,49,30];
+// const prices = [9,1,19,49,30];
 
-prices.reduce((total, price) => totla+price)
+// prices.reduce((total, price) => totla+price)
 
 
 
@@ -221,3 +221,5 @@ prices.reduce((total, price) => totla+price)
 //     }
 //     input = prompt("what would you li")
 // }
+
+

@@ -18,4 +18,17 @@ for (let link of links) {
 }
 
 const doneTodos = document.querySelectorAll('done');
-const checkbox = document.querySelector("#scales").value = "checkbox";
+const checkbox = document.querySelector('input[type=checkbox]');
+
+const allLinks = document.querySelectorAll('a');
+
+for(let link of allLinks){
+    link.innerText = 'I AM A LINK!!!!'
+}
+
+document.querySelector('h1').innerText = '<i>asdf asd<i>'
+
+const updateText = document.querySelectAll('span').innerText = 'Disgusting'
+
+const input = document.querySelect('img')
+input.setAttribute('img', "https://devsprouthosting.com/images/chicken.jpg")
