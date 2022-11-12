@@ -245,8 +245,24 @@
 //     document.querySelectorAll("span")[i].style.color = `${colors[i]}`
 // }
 
-const li1 = document.querySelectorAll('li')
+// const li1 = document.querySelectorAll('li')
 
-for(let line of li1){
-    line.classList.toggle('highlight');
+// for(let line of li1){
+//     line.classList.toggle('highlight');
+// }
+
+const container = document.querySelector('#container');
+const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+for(let i=0;i<151;i++){
+    const pokemon = document.createElement('div');
+    const label = document.createElement('span');
+    label.innerText = `#${i}`;
+    const newImage = document.createElement('img');
+    newImg.src = `${baseURL}${i}.png`
+    pokemon.appendChild(newImg);
+    pokemon.appendChild(label);
+    container.appendChild(newImg);
+
+    
 }
+
