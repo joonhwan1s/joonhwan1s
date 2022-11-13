@@ -245,8 +245,59 @@
 //     document.querySelectorAll("span")[i].style.color = `${colors[i]}`
 // }
 
-const li1 = document.querySelectorAll('li')
+// const li1 = document.querySelectorAll('li')
 
-for(let line of li1){
-    line.classList.toggle('highlight');
-}
+// for(let line of li1){
+//     line.classList.toggle('highlight');
+// }
+
+// const btn = document.querySelector('#v2');
+
+// btn.onclick = function(){
+//     console.log("you clicked me")
+// }
+
+
+// function scream(){
+//     console.log("fadsfasd")
+// }
+
+// btn.onmouseenter = scream;
+
+// document.querySelector('h1').onclick = () => {
+//     alert('you clicked the h1! ')
+// }
+
+// const btn3 = document.querySelector('#v2');
+// btn3.addEventListener('click', function(){
+//     alert('you clicked the h1! ')
+// })
+
+// const tasButton = document.querySelector('#tas');
+
+// tasButton.addEventListener('click', twist, {once: true});
+
+// const btn1 = document.querySelector('#hello')
+// const btn2 = document.querySelector('#goodbye')
+
+// function hello(){
+//     console.log("hello")
+// }
+
+// function goodbye(){
+//     console.log("goodbye")
+// }
+
+// btn1.addEventListener('click', hello)
+// btn2.addEventListener('click', goodbye)
+
+const button = document.querySelector('button');
+button.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'olive';
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    const newColor = `rgb(${r},${g},${b})`;
+})
+
+
