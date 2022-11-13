@@ -169,10 +169,3 @@ while(FirstEnter != 'quit' && FirstEnter !== 'q'){
 //     console.log("YOU GOT IT!!!");
 // }
 
-li {
-    background-color: #B10DC9;
-  }
-  
-  .highlight {
-    background-color: #7FDBFF;
-  }
