@@ -26,9 +26,15 @@ for(let link of allLinks){
     link.innerText = 'I AM A LINK!!!!'
 }
 
+for(let slink of allLinks){
+    link.style.color = 'rgb(0, 108, 137)'
+}
+
 document.querySelector('h1').innerText = '<i>asdf asd<i>'
 
 const updateText = document.querySelectAll('span').innerText = 'Disgusting'
 
 const input = document.querySelect('img')
 input.setAttribute('img', "https://devsprouthosting.com/images/chicken.jpg")
+
+
