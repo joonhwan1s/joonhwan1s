@@ -245,8 +245,88 @@
 //     document.querySelectorAll("span")[i].style.color = `${colors[i]}`
 // }
 
-const li1 = document.querySelectorAll('li')
+// const li1 = document.querySelectorAll('li')
 
-for(let line of li1){
-    line.classList.toggle('highlight');
-}
+// for(let line of li1){
+//     line.classList.toggle('highlight');
+// }
+
+// const button = document.querySelector('button');
+// const h1 = document.querySelector('h1');
+
+
+// button.addEventListener('click',function(){
+//     const newColor = makeRandColor()
+//     document.body.style.backgroundColor = newColor;
+//     h1.innerText = newColor;
+// })
+
+// const makeRandColor = () => {
+//     const r = Math.floor(Math.random() * 255);
+//     const g = Math.floor(Math.random() * 255);
+//     const b = Math.floor(Math.random() * 255);
+//     retrun `rgb(${r}, ${g}, ${b})`
+// }
+
+// const buttons = document.querySelectorAll('button');
+
+// for(let button of buttons){
+//     button.addEventListener('click', function(){
+//         button.style.backgroundColor = makeRandColor()
+//     })
+// }
+
+
+// const h1s = document.querySelectorAll('h1');
+// for(let h1 of h1s){
+//     h1.addEventListener('click', colorize)
+// }
+
+// function colorize(){
+//     this.style.backgroundColor = makeRandColor();
+//     this.style.color = makeRandColor();
+// }
+
+// const input = document.querySelector('input');
+// input.addEventListener('keydown', function(){
+//     console.log("KEYDOWN")
+// })
+
+// const input = document.querySelector('input');
+// input.addEventListener('keydown', function(e){
+//     console.log(e.key)
+//     console.log(e.code)
+// })
+
+// const tweetForm = document.querySelector('#tweetForm');
+// const tweetsContainer = document.querySelector('tweets');  
+// tweetForm.addEventListener('submit', function(e){
+//     e.preventDefault();
+
+//     const usernameinput = tweetForm.elements.username;
+//     const tweeinput = tweetForm.elements.tweet;
+//     addTweet(username.value, tweetinput.value)
+//     usernameinput.value = '';
+//     tweetinput.value = '';
+// })
+
+// const addTweet = (username, tweet) => {
+//     const newTweet = document.createElement('li');
+//     const bTag = document.createElement('b');
+//     bTag.append(username);
+//     newTweet.append(btag);
+//     newTweet.append(`- ${tweet}`);
+//     tweetsContainer.append(newTweet);
+// }
+
+const ProductInput = document.querySelector('#product');
+const NumberInput = document.querySelector('#qty');
+
+ProductInput.addEventListener('submit', function(e){
+    e.preventDefault
+    // const usernameInput = document.querySelectorAll('input')[0];
+    // const tweetInput = document.querySelectorAll('input')[1];
+    // console.log(usernameInput.value, tweetInput.value);
+    console.log("SUBMIT!");
+})
+
