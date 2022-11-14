@@ -7,13 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Grocery</h1>
-    <form action="/dogs" id="tweet">
-        <input type="text" name="username" placeholder="username">
-        <input type="password" name="password" placeholder="username">
-        <button>REGI</button>
+    <h1>Grocery List</h1>
+    <form action="/nowhere" id="tweetForm">
+        <label for="item">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="item">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
     </form>
-   
+
+    <ul id="list"></ul>
     <script src="app.js"></script>
 </body>
+
 </html>
