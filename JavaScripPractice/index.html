@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <style>
+        .winner{
+            color: green;
+        }
+
+        .loser{
+            color: red;
+        }
+    </style>
     <title>First JS Script</title>
+
 
 </head>
 <body>
@@ -24,3 +34,29 @@
 </body>
 
 </html> 
+
+
+
+
+
+
+<h2><span id="p1display">0</span> to <span id="p2display">0</span></h2>
+<div>
+    <p>Use the buttons below to keep Score</p>
+    <p id="PlayerScoreBlock">Playing To 
+        <select name"" id="playto">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select> 
+    </p>
+</div>
+<button id="p1Button">+1 player One</button>
+<button id="p2Button">+1 player One</button>
+<button id="reset">reset</button>  
