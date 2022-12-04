@@ -99,5 +99,5 @@ fakeRequestPromise('yelp.com/api/coffee/page1')
         console.log(err)
     })
 
-
+    
 
